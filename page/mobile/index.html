@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>接口静态文件测试页</title>
-    <script src="/static/jquery.min.js"></script>
+    <script src="/static/js/lib/jquery.min.js"></script>
 </head>
 <body>
 
-
+http://localhost:3000/page/mobile/index.html
 
 
 
 <script>
   $(function(){
-    $.post('/api/statistic/user',{},function(res){
+    $.post('/api/apitest',{},function(res){
       console.log(res);
     },'json');
   });

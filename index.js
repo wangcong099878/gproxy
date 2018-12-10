@@ -4,8 +4,12 @@
 var browserSync = require('browser-sync').create()
 var proxy = require('http-proxy-middleware')
 
-var jsonPlaceholderProxy = proxy('/api', {
-    target: 'https://www.wbwan.vip',
+var jsonPlaceholderProxy = proxy([
+    '/api',
+    '/ajax',
+    '/someotherpath'
+], {
+    target: 'http://local.wbwan.com',
     changeOrigin: true,
     logLevel: 'debug'
 })
