@@ -1,7 +1,7 @@
 {
   "name": "gproxy",
   "version": "1.0.0",
-  "description": "一个简单的前端跨域环境",
+  "description": "一个简单的前端跨域开发环境",
   "main": "index.js",
   "scripts": {
     "bowers": "node index.js",
