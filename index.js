@@ -59,7 +59,7 @@ browserSync.watch(['.'], {ignored: [
 browserSync.init({
     server: {
         baseDir: './',
-        port: 3000,
+        port: 10290,
         middleware: [jsonPlaceholderProxy]
     },
     startPath: '/index.html'
