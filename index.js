@@ -9,7 +9,7 @@ var jsonPlaceholderProxy = proxy([
     '/adminapi',
     '/other'
 ], {
-    target: 'http://local.wbwan.com',
+    target: 'http://devapi.molibx.com',
     changeOrigin: true,
     logLevel: 'debug'
 })
