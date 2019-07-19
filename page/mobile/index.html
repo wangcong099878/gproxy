@@ -3,18 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>接口静态文件测试页</title>
-    <script src="/static/js/lib/jquery.min.js"></script>
+    <script src="/assets/js/lib/jquery.min.js"></script>
 </head>
 <body>
 
 demo地址：
 http://localhost:3000/page/mobile/index.html
 
-
-
 <script>
   $(function(){
-    $.post('/api/apitest',{},function(res){
+    $.post('/api/version',{},function(res){
       console.log(res);
     },'json');
   });
